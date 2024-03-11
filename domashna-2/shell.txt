@@ -1,0 +1,27 @@
+Atlas atlas-x8lrto-shard-0 [primary] test> use Semos
+switched to db Semos
+Atlas atlas-x8lrto-shard-0 [primary] Semos> show collections
+libraries
+students
+users
+Atlas atlas-x8lrto-shard-0 [primary] Semos> db.createCollection("cars")
+{ ok: 1 }
+Atlas atlas-x8lrto-shard-0 [primary] Semos> show collections
+cars
+libraries
+students
+users
+Atlas atlas-x8lrto-shard-0 [primary] Semos> db.cars.insertMany([{"make": "Toyota","model": "Camry", "year": 2022, "color": "Silver", "mileage": 15000, "price": 25000}, {"make": "Honda","model": "Accord", "year": 2020, "color": "White", "mileage": 20000, "price": 22000}, {"make": "Ford","model": "F-150", "year": 2019, "color": "Black", "mileage": 30000, "price": 35000}, {"make": "Chevrolet","model": "Malibu", "year": 2018, "color": "Blue", "mileage": 25000, "price": 18000}, {"make": "Nissan", "model": "Altima", "year": 2017, "color": "Red", "mileage": 35000, "price": 16000}, {"make": "BMV","model": "3 Series", "year": 2021, "color": "Gray", "mileage": 15000, "price": 40000}, {"make": "Mercedes-Benz","model": "C-Class", "year": 2019, "color": "Silver", "mileage": 28000, "price": 32000}, {"make": "Audi","model": "A4", "year": 2020, "color": "Black", "mileage": 20000, "price": 35000}])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('65cdcaebc0db10c40fddbe62'),
+    '1': ObjectId('65cdcaebc0db10c40fddbe63'),
+    '2': ObjectId('65cdcaebc0db10c40fddbe64'),
+    '3': ObjectId('65cdcaebc0db10c40fddbe65'),
+    '4': ObjectId('65cdcaebc0db10c40fddbe66'),
+    '5': ObjectId('65cdcaebc0db10c40fddbe67'),
+    '6': ObjectId('65cdcaebc0db10c40fddbe68'),
+    '7': ObjectId('65cdcaebc0db10c40fddbe69')
+  }
+}
